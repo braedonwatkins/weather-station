@@ -6,10 +6,9 @@ idk! I haven't made it yet chill out
 
 ## Research
 
-### CI/CD Pipelines 
+Putting topics I've researched here as public documentation. Hopefully it helps you @Alexis or outsiders who may see the project in progress and not understand the thought process.
 
-Keeping some public documentation here on CI/CD on ESP32 bc it's *super* weird compared to how I think of CI/CD for web apps.
-Maybe I'll put other notes here on software but this is the nicest place for now.
+### CI/CD Pipelines 
 
 #### The Approach That Will Probably Work: OTA Updates
 
@@ -24,9 +23,11 @@ The OTA could either be implemented using platformIO or "Arduino project structu
 
 ## Description
 
-This unique, original, and authentic project is the result of deep, thoughtful effort. Dreamt up from two of the most unmitigated, unmedicated, and imaginative individuals you can find. Is everyone gone? Good. ASCII bulbasaur 
+And it was spoken thus...
 
-```
+> He was number one!
+
+```C
                                            /
                         _,.------....___,.' ',.-.
                      ,-'          _,.--"        |
