@@ -1,0 +1,8 @@
+.vscode/**
+.cache/**
+compile_commands.json
+
+.pio
+.clang_complete
+.gcc-flags.json
+.ccls
