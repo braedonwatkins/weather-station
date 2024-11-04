@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: roboto;
+    position: relative;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: quartz;
+    src: url(fonts/quartz.ttf);
+}
+
+#bg_mob {
+    background-color: black;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.mob_inner {
+    padding: 15px;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+    width: 100%;
+    margin: 15px 0 0;
+}
+
+.weather_img,
+.weather_text {
+    float: left;
+}
+
+.weather_img {
+    width: 36%;
+}
+
+.weather_img img {
+    width: 100%;
+    max-width: 120px;
+}
+
+.weather_text {
+    text-align: right;
+    width: 64%;
+    font-size: 22px;
+    margin-top: 19px;
+    line-height: 26px;
+}
+
+.clr {
+    clear: both;
+}
+
+.fancy {
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+.fancy2_sec .subtitle {
+    line-height: 32px;
+}
+
+.fancy p span {
+    display: inline-block;
+    position: relative;
+    color: #ababab;
+}
+
+.fancy p span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy p span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.fancy p span:before,
+.fancy p span:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    border-bottom: 2px solid #ababab;
+    top: 0;
+    width: 35px;
+}
+
+.wob_t {
+    font-family: quartz;
+    font-size: 100px;
+}
+
+.pre_alt {
+    color: #ababab;
+}
+
+.pre_alt span {
+    font-family: roboto;
+    font-size: 15px;
+}
+
+.font_fam {
+    font-family: quartz;
+    margin-left: 8px;
+    text-align: left;
+}
+
+.temp_num,
+.temp_num2,
+.temp_num3 {
+    margin-top: 0px;
+}
+
+.temp_num3 .wob_t {
+    font-size: 32px;
+}
+
+.point_para {
+    font-size: 32px;
+    letter-spacing: -4px;
+    font-family: quartz;
+}
+
+.wob_per {
+    font-size: 22px;
+    font-family: roboto;
+}
+
+.celsius {
+    vertical-align: top;
+    margin-left: -16px;
+    margin-top: 22px;
+    display: inline-block;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/quartz.ttf">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
+</head>
+
+<body>
+    <div id="bg_mob">
+        <div class="mob_inner">
+            <div class="sec1">
+                <div class="weather_img">
+                    <img id="weather_icon" src="icons/unknown.png" />
+                </div>
+                <div class="weather_text">
+                    <p>Sunrise <span class="font_fam" id="Sunrise"></span></p>
+                    <p>Sunset &nbsp<span class="font_fam" id="Sunset"></span></p>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <article class="sec2">
+                <div class="fancy">
+                    <p class="subtitle">
+                        <span>Outdoor<br>Temperature</span>
+                    </p>
+                    <div class="temp_num">
+                        <div>
+                            <span class="wob_t" id="out_temperature"></span><span class="point_para">. </span><span
+                                class="point_para" id="out_temperatureD"></span><span class="celsius"> &#8451;</span>
+                            <!-- <span class="wob_per" aria-disabled="true" role="button">°F</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="fancy">
+                    <p class="subtitle">
+                        <span>Outdoor<br>Humidty</span>
+                    </p>
+                    <div class="temp_num">
+                        <div>
+                            <span class="wob_t" id="out_humidity"></span><span class="wob_per" aria-label=""
+                                aria-disabled="true" role="button">%</span>
+                            <!-- <span class="wob_per" aria-label="°Celsius" aria-disabled="true" role="button">%</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </article>
+
+            <article class="sec3">
+                <div class="fancy fancy2_sec">
+                    <p class="subtitle">
+                        <span>Indoor</span>
+                    </p>
+                    <div class="temp_num temp_num2">
+                        <div>
+                            <span class="wob_t" id="in_temperature"></span><span class="point_para">. </span><span
+                                class="point_para" id="in_temperatureD"></span><span class="celsius"> &#8451;</span>
+                            <!-- <span class="wob_per" aria-disabled="true" role="button">°F</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="fancy fancy2_sec">
+                    <p class="subtitle">
+                        <span>Humidity</span>
+                    </p>
+                    <div class="temp_num temp_num2">
+                        <div>
+                            <span class="wob_t" id="in_humidity"></span><span class="wob_per" aria-label=""
+                                aria-disabled="true" role="button">%</span>
+                            <!-- <span class="wob_per" aria-label="°Celsius" aria-disabled="true" role="button">%</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </article>
+
+            <article class="sec4">
+                <div class="fancy fancy2_sec">
+                    <p class="subtitle">
+                        <span>Pressure</span>
+                    </p>
+                    <div class="temp_num temp_num3">
+
+                        <div>
+                            <span class="wob_t" id="in_presssure"></span>
+                            <!-- <span class="wob_per" aria-disabled="true" role="button">°F</span> -->
+                        </div>
+                        <div class="pre_alt"><span>Pa</span></div>
+                    </div>
+                </div>
+                <div class="fancy fancy2_sec">
+                    <p class="subtitle">
+                        <span>Altitude</span>
+                    </p>
+                    <div class="temp_num temp_num3">
+                        <div>
+                            <span class="wob_t" id="in_altitude"></span>
+                            <!-- <span class="wob_per" aria-disabled="true" role="button">°F</span> -->
+                        </div>
+                        <div class="pre_alt"><span>m</span></div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </article>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
