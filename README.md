@@ -4,28 +4,34 @@
 
 Git cloned? Good? Good.
 
-### PlatformIO
+### Installs
 
-PlatformIO is initialized already and you shouldn't have to do much here.
-Right now the main branch is configured to use an arduino uno just because that's what I have so it's easy to test. 
+- CCLS: Language Server for .ccls you know the vibe
+- PlatformIO: It would be best to install the PlatformIO CLI since that's what I'm using here.
 
-When you want that to change you run the PlatformIO extension in VSCode and initialize a new project. For future me if you're on nvim still it's `:Pioinit`
+### Initialization
 
-### Compiled Commands
+First, there's a good chance you'll need to initialize for your editor. 
 
-You may need to do this if your editor doesn't recognize any arduino specific syntax.
+You can do so with:
 
-For me this was solveable by running `pio run -t compiledb`. This generates a `compile_commands.json` which then helps to recognize everything.
+`pio init --ide ${ide}`
+
+This will create `.ccls` file which lets the CCLS language server do its job.
 
 ### Running
 
 In the future this will look like a CI/CD pipeline but for now this assumes you have an Arduino Uno with you. 
 
-Plugging that in if you run `Piorun` or the equivalent in the VSCode extension your code should be uploaded to the board and start running.
+I'm unsure the context of these commands but a few useful ones to get up and running: 
+
+- `pio run -t clean`: If something is cached this tends to un-stick it
+- `pio run -t compiledb`: This creates a `compile_commands.json` and I don't know what that is but it tends to resolve errors like unrecognized flags and header files.
+- `pio run`: This one you'll actually want to run like... when you upload to the board. Who would have thunk.
 
 ## Research
 
-Putting topics I've researched here as public documentation. Hopefully it helps you @Alexis or outsiders who may see the project in progress and not understand the thought process.
+Putting topics I've researched here as public documentation. Hopefully it helps anyone who may see the project in progress and not understand the thought process.
 
 ### CI/CD Pipelines 
 
