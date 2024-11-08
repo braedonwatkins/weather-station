@@ -28,6 +28,7 @@ I'm unsure the context of these commands but a few useful ones to get up and run
 - `pio run -t clean`: If something is cached this tends to un-stick it
 - `pio run -t compiledb`: This creates a `compile_commands.json` and I don't know what that is but it tends to resolve errors like unrecognized flags and header files.
 - `pio run`: This one you'll actually want to run like... when you upload to the board. Who would have thunk.
+- `pio init --ide ${ide}`: Same as before, you may need to run this more than once as you update deps; I had to once so far anyways...
 
 ## Research
 
