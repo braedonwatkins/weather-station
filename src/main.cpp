@@ -41,7 +41,13 @@ String getReadings() {
   return jsonString;
 }
 
-void setup() { pinMode(LED_BUILTIN, OUTPUT); }
+void setup() {
+  Serial.begin(115200); // TODO: figure out why this is in here
+  initSensor();
+  initFS();
+  // initWifi();
+  pinMode(LED_BUILTIN, OUTPUT);
+}
 
 void loop() {
   for (int i = 0; i < 10000; i++) {
