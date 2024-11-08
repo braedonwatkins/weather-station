@@ -1,5 +1,9 @@
-#include "Arduino.h"
-#include "pins_arduino.h"
+#include <Arduino.h>
+#include <Wire.h>
+#include <pins_arduino.h>
+
+#include <Adafruit_BME280.h>
+#include <Adafruit_Sensor.h>
 
 void setup() { pinMode(LED_BUILTIN, OUTPUT); }
 
