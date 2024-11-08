@@ -2,8 +2,18 @@
 #include <Adafruit_Sensor.h>
 #include <Arduino.h>
 #include <ArduinoJson.h>
+#include <LittleFS.h>
 #include <Wire.h>
 #include <pins_arduino.h>
+
+void initFS() {
+  if (!LittleFS.begin()) {
+    Serial.println("An error occured while mounting LittleFS");
+    return;
+  }
+
+  Serial.println("LittleFS mounted successfully");
+}
 
 Adafruit_BME280 bme;
 
