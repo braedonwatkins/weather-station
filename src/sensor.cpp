@@ -1,5 +1,4 @@
 #include "sensor.h"
-#include "config.h"
 
 SensorManager::SensorManager() {}
 

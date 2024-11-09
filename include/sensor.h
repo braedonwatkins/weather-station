@@ -4,12 +4,12 @@
 #include <ArduinoJson.h>
 
 class SensorManager {
-    public:
-        SensorManager();
-        bool begin();
-        String getReadings();
+public:
+  SensorManager();
+  bool begin();
+  String getReadings();
 
-    private:
-        Adafruit_BME280 bme;
-        JsonDocument readings;
-}
+private:
+  Adafruit_BME280 bme;
+  JsonDocument readings;
+};
